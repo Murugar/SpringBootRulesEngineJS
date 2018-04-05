@@ -24,7 +24,7 @@ public class MainResource {
 	private MainCatalog catalogService;
 
 	static ScriptEngine engine = null;
-	private String defaultRuleType = "WhatToDo";
+	private String defaultRuleType = "GetAway";
 	private String rule = null;
 
 	@RequestMapping(value = "/rules/{name}",
