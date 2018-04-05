@@ -24,6 +24,10 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
+	{
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+	}
+	compile('org.springframework.boot:spring-boot-starter-jetty')
 	compile('org.projectlombok:lombok:1.16.6')
 	compile('org.json:json:20090211')
 	compile('com.google.guava:guava:20.0')
